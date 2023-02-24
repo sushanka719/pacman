@@ -1,0 +1,81 @@
+:root {
+    --clr-pacman: #f8ed53;
+    --clr-food: #167916;
+    --clr-wall: #171774;
+    --clr-path: #ffffff;
+
+    --clr-blinky: #ff0000;
+    --clr-pinky: #ff94a6;
+    --clr-inky: #2344ff;
+    --clr-clyde: #fa9519;
+
+    --clr-scared: #723410; 
+}
+
+html, body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 420px;
+    border: 1px solid black;
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;
+}
+
+.pac-dot {
+    background-color: var(--clr-food);
+    border: 5px solid var(--clr-path);
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: var(--clr-wall);
+}
+
+.power-up {
+    background-color: var(--clr-food);
+    border-radius: 7.5px;
+}
+
+.pacman {
+    background-color: var(--clr-pacman);
+    border-radius: 7.5px;
+    border: none;
+}
+
+/* ghosts */
+.blinky,
+.pinky,
+.inky,
+.clyde,
+.scared-ghost {
+    border: none;
+}
+
+.blinky {
+    background-color: var(--clr-blinky);
+}
+
+.pinky {
+    background-color: var(--clr-pinky);
+}
+
+.inky {
+    background-color: var(--clr-inky);
+}
+
+.clyde {
+    background-color: var(--clr-clyde);
+}
+
+.scared-ghost {
+    background-color: var(--clr-scared);
+}
